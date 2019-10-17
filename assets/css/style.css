@@ -217,3 +217,18 @@ html, body {
   .project:hover {
     box-shadow: 0 4px 8px 0 #666, 0 6px 20px 0 #ccc;
   }
+
+  /* On screens that are 980px or less, do the following: */
+@media screen and (max-width: 980px) {
+  
+}
+
+  /* On screens that are 768px or less, do the following: */
+  @media screen and (max-width: 768px) {
+  
+  }
+
+    /* On screens that are 640px or less, do the following: */
+@media screen and (max-width: 640px) {
+  
+}
