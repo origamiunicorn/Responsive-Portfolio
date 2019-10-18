@@ -220,15 +220,112 @@ html, body {
 
   /* On screens that are 980px or less, do the following: */
 @media screen and (max-width: 980px) {
-  
+  header {
+    position: static;
+  }
 }
 
   /* On screens that are 768px or less, do the following: */
   @media screen and (max-width: 768px) {
-  
+    .container {
+      grid-template-columns: 20px 1fr 1fr 20px;
+    }
+    
+    header {
+      position: static;
+      grid-template-columns: 20px 1fr 1fr 20px;
+    }
+
+    section {
+      margin: 30px 0;
+    }
+
+    #navName {
+      padding: 0px 25px;
+    }
+    
+    a.navLinks {
+      font-size: 0.9em;
+      padding: 0 20px 0 10px;
+    }
   }
 
     /* On screens that are 640px or less, do the following: */
 @media screen and (max-width: 640px) {
+  .container {
+    grid-template-columns: 20px 1fr 1fr 20px;
+  }
   
+  header {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .headerName {
+    background-color: #4aaaa5;
+    margin: 0;
+    padding: 30px;
+    font-size: 1em;
+  }
+
+  #navName {
+    display: block;
+    width: 100%;
+    align-items: center;
+    padding: 0px 35px;
+    text-align: center;
+  }
+
+  .headerLinks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+    justify-self: end;
+    color: #ccc;
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+  section {
+    margin: 20px 0;
+  }
+  
+  a.navLinks {
+    font-size: 0.9em;
+    padding: 0 20px 0 10px;
+  }
+
+  h2 {
+font-size: 1.4em;
+  }
+
+  #bioPic {
+    float: none;
+    width: 100%;
+    padding: 5px 25px 10px 0px;
+  }
+
+  .project {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+
+  .projectSmallScreen {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .project:hover {
+    box-shadow: 0 4px 8px 0 #666, 0 6px 20px 0 #ccc;
+  }
 }
