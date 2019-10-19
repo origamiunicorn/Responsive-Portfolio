@@ -192,8 +192,6 @@ html, body {
     position: relative;
     display: inline-block;
     background-color: #ccc;
-    height: 230px;
-    width: 300px;
     margin: 10px 40px 40px 0;
   }
   
@@ -213,6 +211,10 @@ html, body {
     color: #fff;
     box-sizing: border-box;
   }
+
+  .projectSmallScreen {
+    display: block;
+  }
   
   .project:hover {
     box-shadow: 0 4px 8px 0 #666, 0 6px 20px 0 #ccc;
@@ -225,30 +227,45 @@ html, body {
   }
 }
 
-  /* On screens that are 768px or less, do the following: */
+/* On screens that are 768px or less, do the following: */
   @media screen and (max-width: 768px) {
-    .container {
-      grid-template-columns: 20px 1fr 1fr 20px;
-    }
-    
-    header {
-      position: static;
-      grid-template-columns: 20px 1fr 1fr 20px;
-    }
-
-    section {
-      margin: 30px 0;
-    }
-
-    #navName {
-      padding: 0px 25px;
-    }
-    
-    a.navLinks {
-      font-size: 0.9em;
-      padding: 0 20px 0 10px;
-    }
+  .container {
+    grid-template-columns: 20px 1fr 1fr 20px;
   }
+    
+  header {
+    position: static;
+    grid-template-columns: 20px 1fr 1fr 20px;
+  }
+
+  section {
+    margin: 30px 0;
+  }
+
+  #navName {
+    padding: 0px 25px;
+  }
+
+  a.navLinks {
+    font-size: 0.9em;
+    padding: 0 20px 0 10px;
+  }
+
+  h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 1.5em;
+  }
+
+  .project {
+    max-width: 280px;
+    margin: 15px;
+  }
+
+  .projectSmallScreen {
+    width: 100%;
+  }
+
+}
 
     /* On screens that are 640px or less, do the following: */
 @media screen and (max-width: 640px) {
