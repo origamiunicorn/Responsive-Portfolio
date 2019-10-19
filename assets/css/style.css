@@ -257,7 +257,7 @@ html, body {
   }
 
   .project {
-    max-width: 280px;
+    width: 280px;
     margin: 15px;
   }
 
@@ -331,6 +331,7 @@ font-size: 1.4em;
     position: relative;
     width: 100%;
     height: auto;
+    margin: 10px 0;
     padding: 0;
     background-color: #fff;
     box-sizing: border-box;
