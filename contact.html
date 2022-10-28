@@ -60,7 +60,7 @@
       <nav class="tabs is-boxed">
         <div class="container">
           <ul>
-            <li class="is-active"><a href="https://www.linkedin.com/in/rachael-v-wright/" target="_blank">LinkedIn</a>
+            <li><a href="https://www.linkedin.com/in/rachael-v-wright/" target="_blank">LinkedIn</a>
             </li>
             <li><a href="https://github.com/origamiunicorn" target="_blank">GitHub</a></li>
           </ul>
@@ -77,38 +77,46 @@
       </h2>
 
       <div class="field">
-        <label class="label">Name</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="e.g Alex Smith">
-        </div>
+        <h2 class="subtitle" id="submess"></h2>
       </div>
 
-      <div class="field">
-        <label class="label">Email</label>
-        <div class="control">
-          <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
-        </div>
-      </div>
+      <form id="contact-form">
+        <input type="hidden" name="contact_number">
 
-      <div class="field">
-        <label class="label">Message</label>
-        <div class="control">
-          <textarea class="textarea" placeholder="Textarea"></textarea>
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="e.g Beck Chambers" name="user_name">
+          </div>
         </div>
-      </div>
 
-      <div class="field">
-        <div class="control">
-          <button class="button is-link">Submit</button>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="email" placeholder="milkyway@galaxy.com" name="user_email">
+          </div>
         </div>
-      </div>
+
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control">
+            <textarea class="textarea" name="message" placeholder="Write your message to me here!"></textarea>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <input class="button is-link" type="submit" value="Make Contact">
+          </div>
+        </div>
+
+      </form>
+      <br />
 
       <p>
         <strong>Rachael Wright</strong>
         <br />
         rvwright&#64;gmail.com
-        <br />
-        530.386.1443
       </p>
 
       <p>
@@ -126,77 +134,13 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        Copyright &copy; 2019-2020.
+        Copyright &copy; 2019-2022.
       </p>
     </div>
   </footer>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 
 </html>
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Rachael V. Wright's Portfolio</title>
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-</head>
-
-<body>
-  <div class="container">
-
-    <header>
-      <div class="headerName">
-        <h2 id="navName">Rachael V. Wright</h2>
-      </div>
-
-      <div class="headerLinks">
-        <a class="navLinks divider" href="./index.html">About</a>
-        <a class="navLinks divider" href="./portfolio.html">Portfolio</a>
-        <a class="navLinks" href="./contact.html">Contact</a>
-      </div>
-    </header>
-
-    <section>
-
-      <h2>Contact</h2>
-
-      <hr />
-
-      <p>
-        <strong>Rachael Wright</strong>
-        <br />
-        rvwright&#64;gmail.com
-        <br />
-        530.386.1443
-      </p>
-
-      <p>
-        Current Creative Administrator Resume available on <a
-          href="https://drive.google.com/file/d/1EvbEc__dXF2hQX1EdYa3dtcv8J3aGuhA/view?usp=sharing" target="_blank"
-          style="text-decoration: none;">Google Drive</a>.
-      </p>
-
-      <p>Find me on <a href="https://github.com/origamiunicorn" target="_blank"
-          style="text-decoration: none;">GitHub</a>. Find me on <a
-          href="https://www.linkedin.com/in/rachael-v-wright-91796838/" target="_blank"
-          style="text-decoration: none;">LinkedIn</a>.</p>
-
-    </section>
-
-    <footer>
-      <div class="footerContent">
-        <p class="footerText">Copyright &copy; 2019</p>
-      </div>
-    </footer>
-  </div>
-</body>
-
-</html> -->
